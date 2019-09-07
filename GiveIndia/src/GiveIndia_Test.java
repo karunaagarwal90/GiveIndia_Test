@@ -16,6 +16,7 @@ public class GiveIndia_Test {
 		System.setProperty("webdriver.chrome.driver","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
 		driver =new ChromeDriver();
 		driver.get("https://en.wikipedia.org/wiki/Selenium");
+
 		try{
 			driver.manage().window().maximize();
 			List<WebElement> links=driver.findElements(By.xpath("//span[@id='External_links']/parent::h2/following-sibling::ul/li"));
